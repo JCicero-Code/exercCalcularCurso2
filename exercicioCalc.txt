@@ -1,0 +1,32 @@
+operacao = ""
+while operacao != "0":
+  print("Escolha a operação de acordo com os números:")
+  print("")
+  print("----------------")
+  print("1: Adição")
+  print("2: Subtração")
+  print("3: Multiplicação")
+  print("4: Divisão")
+  print("0: Sair")
+  print("----------------")
+  print("")
+  operacao = input("Digite a operação: ")
+  if operacao == "0":
+      print("Obrigado! Por participar")
+      break;
+  numero1 = input("Digite o primeiro numero: ")
+  numero2 = input("Digite o segundo numero: ")
+
+  if operacao == "1":
+    resultado = int(numero1) + int(numero2)  
+  elif operacao == "2":
+    resultado = int(numero1) - int(numero2)
+  elif operacao == "3":
+    resultado = int(numero1) * int(numero2)
+  elif operacao == "4":
+    resultado = int(numero1) / int(numero2)
+  else:
+    resultado = "operador não suportado, escolha as opções: 1, 2, 3, 4 ou 0."
+
+  print("O resultado da operação é: " + str(resultado))
+  print("---------------------------------------")
